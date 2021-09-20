@@ -1,4 +1,4 @@
-package com;
+package by.zhyuliuk.task.utils;
 
 import org.junit.jupiter.api.Test;
 

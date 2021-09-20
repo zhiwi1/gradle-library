@@ -1,4 +1,4 @@
-package com;
+package by.zhyuliuk.task.utils;
 
 import org.apache.commons.lang3.math.NumberUtils;
 
