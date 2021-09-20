@@ -6,14 +6,13 @@ repositories {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'com.StringUtils'
+                'Main-Class': 'by.zhyuliuk.task.utils.StringUtils'
         )
     }
 }
 
 task fatJar(type: Jar) {
     manifest.from jar.manifest
-
     baseName = 'utils'
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
