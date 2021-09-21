@@ -2,8 +2,8 @@ package by.zhyuliuk.task.utils;
 
 import org.apache.commons.lang3.math.NumberUtils;
 
-public class StringUtils {
-
+public final class StringUtils {
+//todo exceptions
     private StringUtils() {
     }
 

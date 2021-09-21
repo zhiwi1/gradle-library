@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class StringUtilsTest {
-
+public class StringUtilsTest {
+//todo first
     @Test
-    void isPositiveNumberTest() {
+    public void isPositiveNumberTest() {
         boolean actual = StringUtils.isPositiveNumber("225");
         assertTrue(actual);
     }
