@@ -4,16 +4,21 @@ repositories {
     mavenCentral()
 }
 jar {
+    archiveBaseName = 'utils'
+    archiveVersion = '1.3.5'
     manifest {
         attributes(
-                'Main-Class': 'by.zhyuliuk.task.utils.StringUtils'
+                'Main-Class': 'by.zhyuliuk.task.utils.StringUtils',
+                'Implementation-Title': archiveBaseName,
+                'Implementation-Version': archiveVersion,
         )
     }
+
 }
 
 task fatJar(type: Jar) {
     manifest.from jar.manifest
-    baseName = 'utils'
+
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     } {
@@ -39,5 +44,5 @@ artifacts {
 test {
     useJUnitPlatform()
 }
-version = '1.3.5'
+
 
